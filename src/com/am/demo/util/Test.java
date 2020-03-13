@@ -1,5 +1,7 @@
 package com.am.demo.util;
 
+import java.util.List;
+
 import com.am.demo.dao.CommonDao;
 import com.am.demo.dto.Restaurant;
 
@@ -15,7 +17,18 @@ public class Test {
 			restaurant.setAddress("manipals");
 			*/
 			CommonDao dao = new CommonDao();
-			dao.updateRestaurantDetails("udupi uphar", 450.5);
+			dao.updateMenuByName("Hyderbadi biryani", "ice cream");
+		/*
+		 * Restaurant restaurant = dao.getRestaurantByName("Hyderbadi biryani");
+		 * System.out.println(restaurant);
+		 */
+		/*
+		 * List<Restaurant> restaurants = dao.getRestaurants(); restaurants.forEach(a->{
+		 * System.out.println(a); });
+		 * 
+		 */
+			//dao.deleteByName("udupi uphar");
+			//dao.updateRestaurantDetails("udupi uphar", 450.5);
 			//Restaurant restaurant = dao.getRestaurantDetails("taj west end");
 			//System.out.println(restaurant);
 		//	dao.saveRestaurant(restaurant);
